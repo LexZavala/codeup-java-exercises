@@ -35,6 +35,24 @@ public class HelloWorld {
         String message = "Hi \"how\"\n\t are you?";
         System.out.println(message);
 
+        int sum = 4 + 5;
+        System.out.println(sum);
+
+        int difference = 72 - 19;
+        System.out.println(difference);
+
+        int whatWillThisBe = -4 * 2;
+        System.out.println(whatWillThisBe);
+
+        int iAmAnInt = 44;
+        long iAmALong = iAmAnInt;
+        System.out.println(iAmALong);
+
+        iAmALong = 99;
+        iAmAnInt = (int) iAmALong;
+        //The above shows casting which allows for the value to convert to the value type you declare
+        System.out.println(iAmAnInt);
+
 
     }
 
