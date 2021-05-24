@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main(String[] args) {
 //        System.out.print("Hello");
@@ -111,14 +113,12 @@ public class HelloWorld {
         System.out.println(hi);
 
 
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Hey friend-o, how's it going?");
+        String userInput = scanner.nextLine();
 
-
-
-
-
-
+        System.out.printf("You're feeling: %s%n", userInput);
 
     }
-
 }
