@@ -14,33 +14,38 @@ public class ControlFlowLec {
 //            System.out.println("I have carried out a conditional test and can confirm that the statement 'y == 2' is not true. It is false");
 //        }
 
-        short y = 32000;
-        if (y < 0) {
-            System.out.println("The variable y contains a negative number value");
-        } else if (y >= 0 && y < 30000){
-            System.out.println("The variable contains a positive number value");
-        } else {
-            System.out.println( "The variable y contains a numeric valye that is dangerously close to the max value for short type variables which is " + Short.MAX_VALUE);
-        }
-
-        String customerChoice;
-
-    //LOOPS
-
-        int i = 1;
-        while (i < 10){
-            System.out.println("Now I am in the loop. I has not incremented yet and its value is " + i);
-            i++;
-            System.out.println("I am still in the loop but I am incremented and its value is " + i);
-        }
-        System.out.println("This is outside the loop after it has executed. The conditional has tested false. The value of i is now 10");
-
-        for (int i = 0; i <10; i++){
-            System.out.println("Now I am in the loop, I has not incremented");
-        }
-
-
-
+//        short y = 32000;
+//        if (y < 0) {
+//            System.out.println("The variable y contains a negative number value");
+//        } else if (y >= 0 && y < 30000){
+//            System.out.println("The variable contains a positive number value");
+//        } else {
+//            System.out.println( "The variable y contains a numeric valye that is dangerously close to the max value for short type variables which is " + Short.MAX_VALUE);
+//        }
+//
+//        String customerChoice;
+//
+//    //LOOPS
+//
+////        int i = 1;
+////        while (i < 10){
+////            System.out.println("Now I am in the loop. I has not incremented yet and its value is " + i);
+////            i++;
+////            System.out.println("I am still in the loop but I am incremented and its value is " + i);
+////        }
+////        System.out.println("This is outside the loop after it has executed. The conditional has tested false. The value of i is now 10");
+//
+////        for (int i = 0; i <10; i++){
+////            System.out.println("Now I am in the loop, I has not incremented yet, its value is " + i);
+////        }
+//
+//
+//        for (int i = 99; i > 0; i--){
+//            String word = "cans";
+//            if (i == 1){
+//                System.out.println();
+//            }
+//        }
 
     }
 }
