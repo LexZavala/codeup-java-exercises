@@ -30,10 +30,9 @@ public class ConsoleExercises {
         int lengthNum = Integer.parseInt(classroomLength);
         int widthNum = Integer.parseInt(classroomWidth);
         int classroomArea = lengthNum * widthNum;
-        System.out.printf("Your class length is: %s, and your class width is: %s%n", lengthNum, widthNum);
-        System.out.printf("The Area of your classroom is %s sqft %n", classroomArea);
-
-
+        int perimeter = (2 * widthNum) + (2 * lengthNum);
+        System.out.printf("Your class length is: %sft, and your class width is: %sft. %n", lengthNum, widthNum);
+        System.out.printf("The Area of your classroom is %s sqft %n and the perimeter is: %s ft.%n", classroomArea, perimeter);
 
     }
 }
