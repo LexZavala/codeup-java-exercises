@@ -6,7 +6,11 @@ public class ControlFlowExercises {
 //        EXERCISE A
         int i = 5;
         while ( i <= 15) {
-            System.out.println("The current value of i is " + i);
+            if (i == 15){
+                System.out.print(i + " ");
+            } else {
+                System.out.printf(i + " ");
+            }
             i++;
         }
 
@@ -53,6 +57,40 @@ public class ControlFlowExercises {
             }
 
 //      #3
+        System.out.println("What number would you like to go up to?");
+        int number = pinCollector.nextInt();
+        boolean userWantsToContinue = false;
+        System.out.println( "Here is your table!");
+        System.out.println("");
+        System.out.println("number | squared | cubed");
+        System.out.println("------ | ------- | -----");
+
+        for (int p = 1; p <= number; p++){
+            int squared = p * p;
+            int cubed = p * p * p;
+            System.out.printf("%-6d | %-7d | %-4d%n", p, squared, cubed);
+            }
+        System.out.println("Would you like to continue? Y/N");
+        while(pinCollector.next().toLowerCase().equals("yes"));
+
+//      #4
+        System.out.println("Enter a grade from 0 to 100");
+        byte gradeInput = pinCollector.nextByte();
+        if (gradeInput <= 100 && gradeInput >= 88){
+            System.out.println("Your grade is A");
+        } else if (gradeInput <= 87 && gradeInput >= 80) {
+            System.out.println("Your grade is B");
+        } else if (gradeInput <= 79 && gradeInput >= 67){
+            System.out.println("Your grade is C");
+        } else if (gradeInput <= 66 && gradeInput >= 60){
+            System.out.println("Your grade is D");
+        } else if (gradeInput <= 50 && gradeInput >= 0){
+            System.out.println("Your grade is F, get gud");
+        }
+        System.out.println("Would you like to continue? Y/N");
+        do {
+            userWantsToContinue = true;
+        } while(pinCollector.next().toLowerCase().equals("y"));
 
 
         }
