@@ -58,45 +58,37 @@ public class MethodsExercises {
         }
     }
 
-    public static int getFactorial() {
+    public static long getFactorial() {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Enter a number between %d and %d%n", 1, 10);
         int input = scanner.nextInt();
-        long result = 1;
-        for (int i = input; i >= 1; i--) {
-            if (input < 1 || input > 10) {
-                System.out.println("Please enter a number between 1 & 10");
-                input = scanner.nextInt();
-            } else {
+        String newString = input + "! = ";
+        long result = input;
+        for (int i = 1; i < input; i++) {
+            if (input > 1 || input < 10) {
+                newString += i + " x ";
                 result *= i;
+            } else {
+                System.out.println("Oops, missed the mark there");
+                return getFactorial();
             }
         }
-        System.out.printf("The factorial for your number %d is: %d%n", input, result);
-        return (int) result;
+        newString += input + " = " + result;
+        System.out.printf(newString + "\n");
+        scanner.nextLine();
+        System.out.println("Do you want to do it again? yes / no");
+        String answer = scanner.nextLine();
+        if (answer.equalsIgnoreCase("yes")) {
+            getFactorial();
+        }
+            return result;
     }
 
-
-
-//    public static int factorial() {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("\nEnter a number between 1 & 10.");
-//        int userNum = sc.nextInt();
-//        while(userNum < 1 || userNum > 10){
-//            System.out.println("Please enter a number between 1 & 10");
-//            userNum = sc.nextInt();
-//        }
-//        long fact = 1;
-//        for (int i = 1; i <= userNum; i++) {
-//            if (i == 1) {
-//                System.out.println(i + "! " + " = " + i * fact);
-//                fact = fact * i;
-//
-//            }else{
-//                System.out.println(i + "! " + " = " + fact +" x "+ i +" = "+ i*fact);
-//                fact = fact * i;
-//            }
-//        }
-//        return (int) fact;
+//    public static int rollDice(){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter the number of sides you want on your pair of dice");
+//        int sides = scanner.nextInt();
+//        System.out.println();
 //    }
 
 
@@ -112,6 +104,6 @@ public class MethodsExercises {
         System.out.println(modulus(2,4));
         System.out.println(multiplyRecursion(5, 5));
         System.out.println(getInteger(1,10));
-        System.out.println(getFactorial());
+        getFactorial();
     }
 }
