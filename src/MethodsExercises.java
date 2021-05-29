@@ -95,8 +95,6 @@ public class MethodsExercises {
 
 
 
-
-
     public static void main(String[] args) {
         System.out.println(add(9, 10));
         System.out.println(subtract(20, 7));
