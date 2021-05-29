@@ -81,15 +81,17 @@ public class MethodsExercises {
         if (answer.equalsIgnoreCase("yes")) {
             getFactorial();
         }
-            return result;
+        return result;
     }
 
-//    public static int rollDice(){
+//    public static int rollDice() {
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Enter the number of sides you want on your pair of dice");
 //        int sides = scanner.nextInt();
-//        System.out.println();
+//        System.out.println("Enter \"Roll\" to roll dice");
 //    }
+
+
 
 
 
