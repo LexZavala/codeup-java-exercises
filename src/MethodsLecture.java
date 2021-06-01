@@ -29,6 +29,7 @@ public class MethodsLecture {
         }
     }
 
+
     public static void main(String[] args) {
         sayHello("Lex");
         System.out.println(multiply(5,2));
@@ -37,5 +38,8 @@ public class MethodsLecture {
         Scanner myScan = new Scanner(System.in);
         willYouTakeUsToMtSplashmore(myScan);
         bottlesOfBlank("Dr.Pepper" , 3);
+
     }
 }
+
+
