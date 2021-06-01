@@ -84,23 +84,34 @@ public class MethodsExercises {
         return result;
     }
 
-//    public static int rollDice() {
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Enter the number of sides you want on your pair of dice");
-//        int sides = scanner.nextInt();
-//        System.out.println("Enter \"Roll\" to roll dice");
-//    }
+    public static String rollDice() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of sides you want on your pair of dice");
+        int sides = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Enter \"Roll\" to roll dice");
+        String roll = scanner.nextLine();
+        if (roll.equalsIgnoreCase("roll")){
+            for (int i = 1; i <= 2; i++){
+                int rollResults = (int)(Math.random() * sides) + 1;
+                System.out.printf("Roll number %d was %d.\n", i, rollResults);
+            }
+
+        }
+        return roll;
+    }
 
 
     public static void main(String[] args) {
-        System.out.println(add(9, 10));
-        System.out.println(subtract(20, 7));
-        System.out.println(multiply(10, 10));
-        System.out.println(divide(50, 5));
-        System.out.println(divide(0, 0));
-        System.out.println(modulus(2,4));
-        System.out.println(multiplyRecursion(5, 5));
-        System.out.println(getInteger(1,10));
-        getFactorial();
+//        System.out.println(add(9, 10));
+//        System.out.println(subtract(20, 7));
+//        System.out.println(multiply(10, 10));
+//        System.out.println(divide(50, 5));
+//        System.out.println(divide(0, 0));
+//        System.out.println(modulus(2,4));
+//        System.out.println(multiplyRecursion(5, 5));
+//        System.out.println(getInteger(1,10));
+//        getFactorial();
+        rollDice();
     }
 }
