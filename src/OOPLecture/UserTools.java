@@ -8,8 +8,7 @@ public class UserTools {
 
     public static void logIn (User u) {
         System.out.println("Please enter your password: ");
-
-        String userPassword = scanner.nextLine();
+        String userPassword = scanner.next();
 
         if (userPassword.equals(u.getPassword())){
             u.setLoggedIn(true);
@@ -49,10 +48,9 @@ public class UserTools {
     }
 
     public static void startMenu (User u){
-        System.out.println("Welcome, what would you liek to do?");
+        System.out.println("Welcome, what would you like to do?");
         System.out.println("1.  Log in.\n2. Exit the program. ");
         int userChoice = scanner.nextInt();
-
         if ( userChoice == 1){
             UserTools.logIn(u);
         } else {
