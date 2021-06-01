@@ -19,6 +19,8 @@ public class Person {
         this.name = name;
     }
 
+    public Person(){}
+
     public static void main(String[] args) {
         Person testPerson = new Person("Lex");
         System.out.println(testPerson.getName());
@@ -30,9 +32,9 @@ public class Person {
 
 //      Person person1 = new Person("John");
 //      Person person2 = new Person("John");
-//      The below is true cause using the equals methods allows to compare string values
+////      The below is true cause using the equals methods allows to compare string values
 //      System.out.println(person1.getName().equals(person2.getName()));
-//      This is false because you cant compare two strings within objects
+////      This is false because you cant compare two strings within objects
 //      System.out.println(person1 == person2);
 
 //      Person person1 = new Person("John");

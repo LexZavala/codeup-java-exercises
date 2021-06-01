@@ -30,11 +30,39 @@ public class Input {
     }
 
     public int getInt(int min, int max){
-        System.out.println("Please enter two numbers, the first one is the minimum and the second is the maximum in a range");
-
+        System.out.printf("Please enter a number between %d and %d.%n", min, max);
+        int userNum = scanner.nextInt();
+        if (userNum < min || userNum > max){
+            System.out.println("Oops, a bit off the mark");
+            getInt(min, max);
+        } else {
+            System.out.printf("Thank you very much, your number %d is between the range", userNum);
+        }
+        return userNum;
     }
 
+    public int getInt(){
+        scanner.nextLine();
+        System.out.println("Please enter a number");
+        int userNum = scanner.nextInt();
+        return userNum;
+    }
+
+    public double getDouble( double min, double max){
+        System.out.printf("Please enter a number between %d and %d.%n", min, max);
+        double userNum = scanner.nextDouble();
+        if (userNum < min || userNum > max){
+            System.out.println("Oops, a bit off the mark");
+            getDouble(min, max);
+        } else {
+            System.out.printf("Thank you very much, your number %d is between the range", userNum);
+        }
+        return userNum;
+    }
 
 }
+
+
+
 
 
