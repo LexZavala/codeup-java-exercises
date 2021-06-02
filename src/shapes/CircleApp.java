@@ -13,8 +13,6 @@ public class CircleApp {
         System.out.println("Area of the circle is " + f.format(area));
         double circ = (circle.getCircumference());
         System.out.println("Circumference is " + f.format(circ));
-
-
     }
 
 }
