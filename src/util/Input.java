@@ -63,7 +63,7 @@ public class Input {
     }
 
     public double getDouble(){
-        System.out.println("Please enter a number");
+        System.out.println("Please enter a decimal number");
         double userNum = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Your double is " + userNum);
