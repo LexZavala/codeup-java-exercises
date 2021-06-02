@@ -19,14 +19,7 @@ public class Input {
     public boolean yesNo(){
         System.out.println("Enter yes or no");
         String userYesNo = scanner.nextLine();
-        boolean result = false;
-        if (userYesNo.equalsIgnoreCase("yes")) {
-            result = true;
-        } else if (userYesNo.equalsIgnoreCase("no")){
-            result = false;
-        }
-        System.out.println("Your boolean is: " + result);
-        return result;
+        return  (userYesNo.trim().equalsIgnoreCase("yes") || userYesNo.trim().equalsIgnoreCase("y"));
     }
 
     public int getInt(int min, int max){
