@@ -7,6 +7,6 @@ public class InputTest {
         test.yesNo();
         test.getInt(1, 10);
         test.getInt();
-        test.getDouble(1.5, 2.3);
+//        test.getDouble(1.5, 2.3);
     }
 }

@@ -32,19 +32,20 @@ public class Input {
     public int getInt(int min, int max){
         System.out.printf("Please enter a number between %d and %d.%n", min, max);
         int userNum = scanner.nextInt();
+        scanner.nextLine();
         if (userNum < min || userNum > max){
             System.out.println("Oops, a bit off the mark");
             getInt(min, max);
         } else {
-            System.out.printf("Thank you very much, your number %d is between the range", userNum);
+            System.out.printf("Thank you very much, your number %d is between the range%n", userNum);
         }
         return userNum;
     }
 
     public int getInt(){
-        scanner.nextLine();
         System.out.println("Please enter a number");
         int userNum = scanner.nextInt();
+        scanner.nextLine();
         return userNum;
     }
 
