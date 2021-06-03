@@ -1,3 +1,5 @@
+import java.security.cert.PolicyNode;
+
 public class BirdTest {
     public static void main(String[] args) {
 //        Bird cardinal = new Bird();
@@ -14,6 +16,9 @@ public class BirdTest {
 //        penguin.setCanFly(false);
 //        penguin.move();
 //        penguin.makeNoise();
+
+//        Polymorphism allows us to have different reference and object types
+        Bird myPenguin = new Penguin();
 
     }
 }

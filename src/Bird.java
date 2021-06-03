@@ -25,7 +25,7 @@ public class Bird {
 //            System.out.println("Quack Quack");
 //        }
 
-        System.out.println(this.name + "goes");
+        System.out.println(this.name + " goes ");
     }
 
     public void move(){
