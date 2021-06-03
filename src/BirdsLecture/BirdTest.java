@@ -8,9 +8,9 @@ public class BirdTest {
 //        cardinal.makeNoise();
 //        cardinal.move();
 
-        Duck mallard = new Duck();
-        mallard.setName("Mallard");
-        mallard.makeNoise();
+//        Duck mallard = new Duck();
+//        mallard.setName("Mallard");
+//        mallard.makeNoise();
 //        BirdsLecture.Penguin penguin = new BirdsLecture.Penguin();
 //        penguin.setName("Happy Feet");
 //        penguin.setCanFly(false);
@@ -18,7 +18,11 @@ public class BirdTest {
 //        penguin.makeNoise();
 
 //        Polymorphism allows us to have different reference and object types
-        Bird myPenguin = new Penguin();
+//        Bird myPenguin = new Penguin();
+
+        Finch houseFinch = new Finch();
+
+        Bird testBird =  new Bird();
 
     }
 }
