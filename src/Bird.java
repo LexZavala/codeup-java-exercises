@@ -5,7 +5,7 @@ public class Bird {
         return canFly;
     }
 
-    public void  setCanFy (boolean canFly) {
+    public void  setCanFly (boolean canFly) {
         this.canFly = canFly;
     }
 
@@ -20,6 +20,11 @@ public class Bird {
     }
 
     public void makeNoise(){
+//        WRONG CODE DONT DO THIS
+//        if (this.name.equalsIgnoreCase("Duck")){
+//            System.out.println("Quack Quack");
+//        }
+
         System.out.println("tweet tweet");
     }
 
