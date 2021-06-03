@@ -2,15 +2,10 @@ import java.util.Arrays;
 
 public class ArraysExercises {
 
-    public static Person addPerson (Person[] x, String name)  {
+    public static Person[] addPerson (Person[] x, Person newPerson)  {
         int newLength = x.length + 1;
         Person[] copy = Arrays.copyOf(x, newLength );
-        System.out.println(copy.length);
-        copy[copy.length-1] = new Person(name);
-        for (Person personName : copy){
-            System.out.println(personName.getName());
-        }
-//        x =copy;
+        copy[copy.length-1] = newPerson;
         return copy;
     }
     public static void main(String[] args) {
@@ -25,13 +20,16 @@ public class ArraysExercises {
         personsArr[2] = new Person("Diana");
         System.out.println(personsArr.length);
 
-        addPerson(personsArr, "Sofia")
         for (Person name : personsArr){
             System.out.println(name.getName());
         }
 
-        addPerson(personsArr, "Sofia");
-        System.out.println(addPerson(personsArr, "Sofia"));
+        Person sofia = new Person("Sofia");
+        personsArr = addPerson(personsArr, sofia);
+        for (Person name : personsArr){
+            System.out.println(name.getName());
+        }
+
 
 
 
