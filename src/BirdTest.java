@@ -9,6 +9,11 @@ public class BirdTest {
         Duck mallard = new Duck();
         mallard.setName("Mallard");
         mallard.makeNoise();
+//        Penguin penguin = new Penguin();
+//        penguin.setName("Happy Feet");
+//        penguin.setCanFly(false);
+//        penguin.move();
+//        penguin.makeNoise();
 
     }
 }
