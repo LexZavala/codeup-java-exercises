@@ -1,3 +1,5 @@
+package BirdsLecture;
+
 public class BirdShelterTest {
     public static void main(String[] args) {
 //      Polymorphic array

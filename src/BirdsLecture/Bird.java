@@ -1,3 +1,5 @@
+package BirdsLecture;
+
 public class Bird {
     private boolean canFly;
 
@@ -21,7 +23,7 @@ public class Bird {
 
     public void makeNoise(){
 //        WRONG CODE DONT DO THIS
-//        if (this.name.equalsIgnoreCase("Duck")){
+//        if (this.name.equalsIgnoreCase("BirdsLecture.Duck")){
 //            System.out.println("Quack Quack");
 //        }
 

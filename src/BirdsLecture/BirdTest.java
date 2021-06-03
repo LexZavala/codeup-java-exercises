@@ -1,8 +1,8 @@
-import java.security.cert.PolicyNode;
+package BirdsLecture;
 
 public class BirdTest {
     public static void main(String[] args) {
-//        Bird cardinal = new Bird();
+//        BirdsLecture.Bird cardinal = new BirdsLecture.Bird();
 //        cardinal.setName("Cardinal");
 //        cardinal.setCanFly(true);
 //        cardinal.makeNoise();
@@ -11,7 +11,7 @@ public class BirdTest {
         Duck mallard = new Duck();
         mallard.setName("Mallard");
         mallard.makeNoise();
-//        Penguin penguin = new Penguin();
+//        BirdsLecture.Penguin penguin = new BirdsLecture.Penguin();
 //        penguin.setName("Happy Feet");
 //        penguin.setCanFly(false);
 //        penguin.move();

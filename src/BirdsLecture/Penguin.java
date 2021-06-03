@@ -1,4 +1,8 @@
-public class Penguin extends Bird{
+package BirdsLecture;
+
+import BirdsLecture.Bird;
+
+public class Penguin extends Bird {
     public void makeNoise(){
         System.out.println(this.getName() + " goes honk honk!");
     }
