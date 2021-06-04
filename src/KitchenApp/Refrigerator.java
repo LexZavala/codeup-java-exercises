@@ -20,6 +20,10 @@ public class Refrigerator extends Appliance implements StoreFood {
         this.hasShelves = hasShelves;
     }
 
+    public Refrigerator (String type, String brandName){
+        super(type, brandName);
+    }
+
     public void setType (String type){
         this.type = type;
     }

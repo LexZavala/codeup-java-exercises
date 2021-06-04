@@ -5,4 +5,5 @@ public interface StoreFood {
 
     void keepFresh();
 
+
 }
