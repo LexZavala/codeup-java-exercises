@@ -23,6 +23,7 @@ public class BirdTest {
         Finch houseFinch = new Finch();
 
         Bird testBird =  new Bird();
+        System.out.println(testBird.getName());
 
     }
 }
