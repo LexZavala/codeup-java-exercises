@@ -30,16 +30,5 @@ public class ArraysExercises {
             System.out.println(name.getName());
         }
 
-
-
-
-
-
-
-
-
-
-
-
     }
 }
