@@ -13,6 +13,14 @@ public class Rectangle extends Quadrilateral implements Measurable {
         return length * width;
     }
 
+    public int setLength(int length) {
+        return this.length = length;
+    }
+
+    public int setWidth(int width) {
+        return this.width = width;
+    }
+
 //    OLD WAY WITHOUT ABSTRACT OR INTERFACE
 //    protected double length;
 //
