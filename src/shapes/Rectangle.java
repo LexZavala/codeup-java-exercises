@@ -7,12 +7,10 @@ public class Rectangle extends Quadrilateral implements Measurable {
 
     public int getPerimeter() {
         return 2 * length + 2 * width;
-
     }
 
     public int getArea() {
         return length * width;
-
     }
 
 //    OLD WAY WITHOUT ABSTRACT OR INTERFACE
