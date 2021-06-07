@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Student {
 
-    private static String name;
+    private String name;
 
     private ArrayList<Integer> grades;
 
@@ -15,7 +15,7 @@ public class Student {
 
     // returns the student's name
     public String getName(){
-        return name;
+        return this.name;
     }
 
 //    public void setName(String name){

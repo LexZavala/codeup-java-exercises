@@ -21,8 +21,13 @@ public class GradesApplication {
                 getStudentInfo(list, students);
             }
         } else {
-            System.out.println("Name: " + students.get(studentInput).getName() + "- " + "Github Username: " + studentInput + "\n");
+            System.out.println("Name: " + students.get(studentInput).getName() + "- " + "Github Username: " + studentInput);
             System.out.println("Current Average: " + students.get(studentInput).getGradeAverage());
+        }
+        System.out.println("Would you like to see another student? (Y/N)");
+        String userContinue = scanner.nextLine();
+        if (userContinue.equalsIgnoreCase("yes") || userContinue.equalsIgnoreCase("y")){
+            getStudentInfo(list, students);
         }
         return studentInput;
     }
@@ -61,9 +66,6 @@ public class GradesApplication {
 
         ArrayList<String> usernameList = new ArrayList<>(keySet);
 
-        System.out.println(student4.getGradeAverage());
-        System.out.println(student4.getName());
-
 //      INTERFACE
         System.out.println("Welcome!\n");
         System.out.println("Here are the Github usernames of our students:");
@@ -72,16 +74,5 @@ public class GradesApplication {
         }
         System.out.println("\n");
         getStudentInfo(usernameList, students);
-
-
-
-
-
-
-
-
-
-
-
     }
 }
