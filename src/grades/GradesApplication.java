@@ -7,8 +7,10 @@ import java.util.Set;
 
 
 public class GradesApplication {
-    public static String getStudentInfo( ArrayList<String> list){
+
+    public static String getStudentInfo( ArrayList<String> list, HashMap <String, Student> students){
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("What student would you like to see more information on?");
         String studentInput = scanner.nextLine();
         if (!list.contains(studentInput)) {
@@ -16,11 +18,13 @@ public class GradesApplication {
             System.out.println("Would you like to see another student? (Y/N)");
             String userContinue = scanner.nextLine();
             if (userContinue.equalsIgnoreCase("yes") || userContinue.equalsIgnoreCase("y")){
-                getStudentInfo(list);
+                getStudentInfo(list, students);
             }
         } else {
-            System.out.println();
+            System.out.println("Name: " + students.get(studentInput).getName() + "- " + "Github Username: " + studentInput + "\n");
+            System.out.println("Current Average: " + students.get(studentInput).getGradeAverage());
         }
+        return studentInput;
     }
 
     public static void main(String[] args) {
@@ -57,7 +61,8 @@ public class GradesApplication {
 
         ArrayList<String> usernameList = new ArrayList<>(keySet);
 
-        System.out.println(usernameList);
+        System.out.println(student4.getGradeAverage());
+        System.out.println(student4.getName());
 
 //      INTERFACE
         System.out.println("Welcome!\n");
@@ -65,22 +70,10 @@ public class GradesApplication {
         for (String username : usernameList){
             System.out.print("|" + username + "| ");
         }
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("What student would you like to see more information on?");
-        String studentInput = scanner.nextLine();
-        if (!usernameList.contains(studentInput)) {
-            System.out.println("Sorry, no student found with the Github username of: " + " \"" + studentInput + "\"\n");
-            System.out.println("Would you like to see another student? (Y/N)");
-            String userContinue = scanner.nextLine();
-            if (userContinue.equalsIgnoreCase("yes") || userContinue.equalsIgnoreCase("y")){
-                System.out.println("What student would you like to see more information on?");
-                if (usernameList.contains(studentInput)) {
-                    System.out.println(students.);
-                }
-            }
-        } else {
-            System.out.println();
-        }
+        System.out.println("\n");
+        getStudentInfo(usernameList, students);
+
+
 
 
 
