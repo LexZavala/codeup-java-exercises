@@ -13,12 +13,12 @@ public class Square extends Quadrilateral {
         return 4 * length;
     }
 
-    public int setLength(int side) {
-        return this.length = side;
+    public void setLength(int side) {
+        this.length = side;
     }
 
-    public int setWidth(int side) {
-        return this.width = side;
+    public void setWidth(int side) {
+         this.width = side;
     }
 
 
