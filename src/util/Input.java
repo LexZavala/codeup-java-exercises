@@ -9,15 +9,15 @@ public class Input {
         this.scanner = new Scanner(System.in);
     }
 
-    public String getString(){
-        System.out.println("Enter a sentence");
+    public String getString(String command){
+        System.out.println(command);
         String userSentence = scanner.nextLine();
         System.out.println("Your sentence is: " + userSentence);
         return userSentence;
     }
 
-    public boolean yesNo(){
-        System.out.println("Enter yes or no");
+    public boolean yesNo(String question){
+        System.out.println(question);
         String userYesNo = scanner.nextLine();
         return  (userYesNo.trim().equalsIgnoreCase("yes") || userYesNo.trim().equalsIgnoreCase("y"));
     }
