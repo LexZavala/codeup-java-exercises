@@ -16,6 +16,13 @@ public class Input {
         return userSentence;
     }
 
+    public String getStringAlt(String command){
+        System.out.println(command);
+        String userSentence = scanner.nextLine();
+        System.out.println("Great you selected: " + userSentence);
+        return userSentence;
+    }
+
     public boolean yesNo(String question){
         System.out.println(question);
         String userYesNo = scanner.nextLine();

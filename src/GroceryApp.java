@@ -8,12 +8,7 @@ import java.util.Scanner;
 public class GroceryApp extends Input {
 
     Scanner scanner = new Scanner(System.in);
-    public String getString(String command){
-        System.out.println(command);
-        String userSentence = scanner.nextLine();
-        System.out.println("Your sentence is: " + userSentence);
-        return userSentence;
-    }
+
 
     public static void main(String[] args) {
         HashMap<String, Grocery> groceries = new HashMap<>();
@@ -23,7 +18,7 @@ public class GroceryApp extends Input {
         categories.add("Dairy");
         categories.add("Vegetables");
         categories.add("Fruits");
-        System.out.println(categories);
+//        System.out.println(categories);
 
 
 //        Grocery item1 = new Grocery("");
@@ -47,7 +42,13 @@ public class GroceryApp extends Input {
         if (createList){
             boolean addItem = input.yesNo("Would you like enter a new item? (Y/N)");
             if (addItem){
-                System.out.println("this worked");
+                System.out.println("These are the categories available:");
+                for (String category : categories){
+                    System.out.print("|" + category + "| ");
+                }
+                System.out.println("\n");
+                input.getStringAlt("Type the name of the category for your item");
+//                System.out.println("Type the name of the category for your item");
             }
         }
 
