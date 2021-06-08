@@ -19,7 +19,6 @@ public class Input {
     public String getStringAlt(String command){
         System.out.println(command);
         String userSentence = scanner.nextLine();
-        System.out.println("Great you selected: " + userSentence);
         return userSentence;
     }
 
@@ -47,6 +46,13 @@ public class Input {
         int userNum = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Your interger was " + userNum);
+        return userNum;
+    }
+
+    public int getIntAlt(String question){
+        System.out.println(question);
+        int userNum = scanner.nextInt();
+        scanner.nextLine();
         return userNum;
     }
 

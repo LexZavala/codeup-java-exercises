@@ -1,20 +1,18 @@
-import java.util.ArrayList;
-
 public class Grocery {
 
     private String name;
-    private ArrayList<Integer> quantity;
+    private int quantity;
 
-    public Grocery (String name)  {
+    public Grocery (String name, int quantity)  {
             this.name = name;
-            this.quantity = new ArrayList<>();
+            this.quantity = quantity;
         }
 
     public String getName() {
         return name;
     }
 
-    public ArrayList<Integer> getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
