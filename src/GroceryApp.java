@@ -52,7 +52,10 @@ public class GroceryApp extends Input {
                     String itemName = input.getStringAlt("Type the name of the item you want to add");
                     String itemQuantity = input.getStringAlt("How many of this item?");
 
-                    groceries.putIfAbsent(userCategory,);
+//                    Grocery item1 = new Grocery(itemName, itemQuantity);
+//                    groceries.putIfAbsent(userCategory,);
+
+                    System.out.println("Wou");
                 }
             }
         }
