@@ -1,5 +1,6 @@
 package AnnotationsLecture;
 
+//@SuppressWarnings("all") // will suppress the warnings of what may happen at compiletime
 public class Fruit implements Food {
 
     @Deprecated

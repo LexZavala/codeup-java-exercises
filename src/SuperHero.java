@@ -2,20 +2,22 @@ public class SuperHero extends Person {
 
     private String publicPersona;
 
-
-
-    public SuperHero(String name) {
-        super(name);
-    }
-
-    public SuperHero (String name, String publicPersona) {
-        super(name);
+    public SuperHero(String firstName, String lastName, String publicPersona) {
+        super(firstName, lastName);
         this.publicPersona = publicPersona;
     }
 
-    public String
+    @Override
+    public String getName() {
+        return publicPersona;
+    }
 
-    public String alterEgo(){
-        return this.getName();
+    public static void main(String[] args) {
+        SuperHero test = new SuperHero("Dale", "Denverson", "The Shinning Boy");
+        Person Jim = new SuperHero("Jim", "Halpert", "SuperJim");
+
+
+        System.out.println(test.getName());
+
     }
 }
