@@ -1,28 +1,30 @@
 public class Person {
 
-    private String name;
+    private String firstname;
+    private String lastName;
 
     public String getName(){
-        return name;
+        return firstname;
     }
 
     public void setName(String name){
 //TODO: change the name property to the passed value
-        this.name = name;
+        this.firstname = name;
     }
     public void sayHello(){
 //TODO: print a message to the console using the person's name
-        System.out.println("Hello " + name);
+        System.out.println("Hello " + firstname);
     }
 
-    public Person(String name){
-        this.name = name;
+    public Person(String name, String lastName){
+        this.firstname = name;
+        this.lastName = lastName;
     }
 
     public Person(){}
 
     public static void main(String[] args) {
-        Person testPerson = new Person("Lex");
+        Person testPerson = new Person("Lex", "Zavala");
         System.out.println(testPerson.getName());
         testPerson.setName("Ramon");
         System.out.println("new name is " + testPerson.getName());
@@ -42,7 +44,7 @@ public class Person {
 //      System.out.println(person1 == person2);
 //      The Above is true because the comparisson is made on objects that are the exact same
 
-        Person person1 = new Person("John");
+        Person person1 = new Person("John", "Doe");
         Person person2 = person1;
         System.out.println(person1.getName());
         System.out.println(person2.getName());

@@ -15,16 +15,16 @@ public class ArraysExercises {
 
         Person[] personsArr = new Person[3];
 
-        personsArr[0] = new Person("Clark");
-        personsArr[1] = new Person("Bruce");
-        personsArr[2] = new Person("Diana");
+        personsArr[0] = new Person("Clark", "Kent");
+        personsArr[1] = new Person("Bruce", "Wayne");
+        personsArr[2] = new Person("Diana", "Prince");
         System.out.println(personsArr.length);
 
         for (Person name : personsArr){
             System.out.println(name.getName());
         }
 
-        Person sofia = new Person("Sofia");
+        Person sofia = new Person("Sofia", "Lazzo");
         personsArr = addPerson(personsArr, sofia);
         for (Person name : personsArr){
             System.out.println(name.getName());
