@@ -23,11 +23,11 @@ public class GradesApplication {
         } else {
             System.out.println("Name: " + students.get(studentInput).getName() + "- " + "Github Username: " + studentInput);
             System.out.println("Current Average: " + students.get(studentInput).getGradeAverage());
-        }
-        System.out.println("Would you like to see another student? (Y/N)");
-        String userContinue = scanner.nextLine();
-        if (userContinue.equalsIgnoreCase("yes") || userContinue.equalsIgnoreCase("y")){
-            getStudentInfo(list, students);
+            System.out.println("Would you like to see another student? (Y/N)");
+            String userContinue = scanner.nextLine();
+            if (userContinue.equalsIgnoreCase("yes") || userContinue.equalsIgnoreCase("y")) {
+                getStudentInfo(list, students);
+            }
         }
         return studentInput;
     }

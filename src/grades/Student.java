@@ -18,10 +18,6 @@ public class Student {
         return this.name;
     }
 
-//    public void setName(String name){
-//        this.name = name;
-//    }
-
     // adds the given grade to the grades property
     public void addGrade(int grade){
         this.grades.add(grade);
