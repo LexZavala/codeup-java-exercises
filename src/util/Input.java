@@ -9,6 +9,7 @@ public class Input {
         this.scanner = new Scanner(System.in);
     }
 
+
     public String getString(String command){
         System.out.println(command);
         String userSentence = scanner.nextLine();
@@ -55,6 +56,19 @@ public class Input {
         scanner.nextLine();
         return userNum;
     }
+
+    public int getIntExc(){
+        String userInput = getString("Enter an interger number please");
+        int intUserInput = Integer.valueOf(userInput);
+        try {
+
+        }
+        scanner.nextLine();
+        System.out.println("Your interger was " + );
+        return userNum;
+    }
+
+
 
     public double getDouble( double min, double max){
         System.out.printf("Please enter a number between %f and %f.%n", min, max);
