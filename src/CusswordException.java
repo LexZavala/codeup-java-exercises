@@ -1,5 +1,5 @@
 public class CusswordException extends Exception {
-    CusswordException (String word){
-        super(word);
+    CusswordException (String warning){
+        super(warning);
     }
 }

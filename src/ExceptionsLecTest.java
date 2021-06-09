@@ -14,10 +14,14 @@ public class ExceptionsLecTest {
         ExceptionsLecture study = new ExceptionsLecture();
 //        study.askForAnInterger();
 //        study.aMoreComplexAskForInteger();
+
         try {
-            study.echoWord();
-        } catch (IllegalArgumentException iae) {
+            study.echoWordCustomEx();
+        } catch (CusswordException ce) {
             System.out.println("How rude!");
+            System.out.println(ce.getMessage());
         }
+
+
     }
 }

@@ -39,12 +39,21 @@ public class ExceptionsLecture {
         }
     }
 
-    public void echoWord() throws  IllegalArgumentException {
+//    public void echoWord() throws  IllegalArgumentException {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("I am a parrot. Please say something and I will parrot you");
+//        String userInput = scanner.nextLine();
+//        if (userInput.equals("curses")){
+//            throw new IllegalArgumentException();
+//        }
+//        System.out.println(userInput);
+//    }
+    public void echoWordCustomEx() throws  CusswordException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("I am a parrot. Please say something and I will parrot you");
         String userInput = scanner.nextLine();
         if (userInput.equals("curses")){
-            throw new IllegalArgumentException();
+            throw new CusswordException("How dare you!");
         }
         System.out.println(userInput);
     }
