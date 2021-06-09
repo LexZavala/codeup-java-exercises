@@ -13,7 +13,6 @@ public class Input {
     public String getString(String command){
         System.out.println(command);
         String userSentence = scanner.nextLine();
-        System.out.println("Your sentence is: " + userSentence);
         return userSentence;
     }
 
@@ -59,13 +58,14 @@ public class Input {
 
     public int getIntExc(){
         String userInput = getString("Enter an interger number please");
-        int intUserInput = Integer.valueOf(userInput);
         try {
-
+            int intUserInput = Integer.valueOf(userInput);
+            System.out.println("Thank you very much, your number was " + intUserInput);
+            return  intUserInput;
+        } catch (NumberFormatException nfe) {
+            System.out.println("That's not a number");
+             return getIntExc();
         }
-        scanner.nextLine();
-        System.out.println("Your interger was " + );
-        return userNum;
     }
 
 
@@ -88,6 +88,18 @@ public class Input {
         scanner.nextLine();
         System.out.println("Your double is " + userNum);
         return userNum;
+    }
+
+    public double getDoubleExc(){
+        String userInput = getString("Enter an decimal number please");
+        try {
+            double doubleUserInput = Double.valueOf(userInput);
+            System.out.println("Thank you very much, your number was " + doubleUserInput);
+            return doubleUserInput;
+        } catch (NumberFormatException nfe) {
+            System.out.println("That's not a decimal");
+            return getDoubleExc();
+        }
     }
 
 }
