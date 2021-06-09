@@ -43,7 +43,7 @@ public class ExceptionsLecture {
         Scanner scanner = new Scanner(System.in);
         System.out.println("I am a parrot. Please say something and I will parrot you");
         String userInput = scanner.nextLine();
-        if (userInput.equals("curse")){
+        if (userInput.equals("curses")){
             throw new IllegalArgumentException();
         }
         System.out.println(userInput);

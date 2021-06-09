@@ -13,6 +13,11 @@ public class ExceptionsLecTest {
 //        }
         ExceptionsLecture study = new ExceptionsLecture();
 //        study.askForAnInterger();
-        study.aMoreComplexAskForInteger();
+//        study.aMoreComplexAskForInteger();
+        try {
+            study.echoWord();
+        } catch (IllegalArgumentException iae) {
+            System.out.println("How rude!");
+        }
     }
 }
