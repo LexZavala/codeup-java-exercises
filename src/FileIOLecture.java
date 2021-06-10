@@ -1,5 +1,8 @@
 import java.io.IOException;
 import java.nio.file.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class FileIOLecture {
@@ -42,10 +45,21 @@ public class FileIOLecture {
 
 //      FILE CREATION
         try {
-            Files.createFile(toOurDataFile);
+            if (Files.notExists(toOurDataFile)){
+                Files.createFile(toOurDataFile);
+            }
         } catch (IOException ioe){
             ioe.printStackTrace();
         }
+
+        List<String> romanEmpressess = Arrays.asList("Livia", "Agrippina", "Messaline", "Julia Donna");
+
+        try {
+            Files.write(toOurDataFile, romanEmpressess);
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+
 
     }
 }
