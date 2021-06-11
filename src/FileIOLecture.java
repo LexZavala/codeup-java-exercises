@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 
@@ -17,7 +18,6 @@ public class FileIOLecture {
         for (String line : currentList){
             System.out.println(line);
         }
-
     }
 
     public static void main(String[] args) {
@@ -66,15 +66,15 @@ public class FileIOLecture {
 //            ioe.printStackTrace();
 //        }
 //
-//        List<String> romanEmpressess = Arrays.asList("Livia", "Agrippina", "Messaline", "Julia Donna");
-//
-//        try {
-//            // 2 arguments for write
-//            // The path to our file, the data we want to write
-//            Files.write(toOurDataFile, romanEmpressess);
-//        } catch (IOException ioe) {
-//            ioe.printStackTrace();
-//        }
+        List<String> romanEmpressess = Arrays.asList("Livia", "Agrippina", "Messaline", "Julia Donna");
+
+        try {
+            // 2 arguments for write
+            // The path to our file, the data we want to write
+            Files.write(toOurDataFile, romanEmpressess);
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
 
 //      READ FILE
 
@@ -106,21 +106,43 @@ public class FileIOLecture {
 
         // Append a list to a list
 
-        List<String> lateRomanEmpresses = new ArrayList<>();
-        lateRomanEmpresses.add("Galla Placidia");
-        lateRomanEmpresses.add("Theodora");
-        lateRomanEmpresses.add("Licinia Eudoxia");
+//        List<String> lateRomanEmpresses = new ArrayList<>();
+//        lateRomanEmpresses.add("Galla Placidia");
+//        lateRomanEmpresses.add("Theodora");
+//        lateRomanEmpresses.add("Licinia Eudoxia");
+//
+//        try {
+//            Files.write(toOurDataFile, lateRomanEmpresses, StandardOpenOption.APPEND);
+//        } catch (IOException ioe){
+//            ioe.printStackTrace();
+//        }
 
+//        io.readFileAndOutput(toOurDataFile);
+
+        // Remove
+        List<String> currentList = new ArrayList<>();
         try {
-            Files.write(toOurDataFile, lateRomanEmpresses, StandardOpenOption.APPEND);
+            currentList = Files.readAllLines(toOurDataFile);
+        }catch (IOException ioe){
+            ioe.printStackTrace();
+        }
+
+        Iterator<String> listIterator = currentList.iterator();
+        while(listIterator.hasNext()){
+            String empress = listIterator.next();
+            if (empress.equals("Julia Maesa")){
+                listIterator.remove();
+            }
+        }
+        try {
+            Files.write(toOurDataFile, currentList);
         } catch (IOException ioe){
             ioe.printStackTrace();
         }
 
         io.readFileAndOutput(toOurDataFile);
 
-        // Remove
-
     }
 }
+
 
