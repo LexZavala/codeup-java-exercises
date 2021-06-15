@@ -39,6 +39,4 @@ public class Student {
         System.out.println(testStudent.getName());
         System.out.println("The average is " + testStudent.getGradeAverage());
     }
-
-
 }
