@@ -20,5 +20,4 @@ public class QuizTesting {
             System.out.println("This will always run.");
         }
     }
-
 }
