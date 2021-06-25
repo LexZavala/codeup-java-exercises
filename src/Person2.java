@@ -4,7 +4,6 @@ public class Person2 {
     public Person2(String name) {
         this.name = name;
     }
-
     public String getName() {
         return name;
     }
