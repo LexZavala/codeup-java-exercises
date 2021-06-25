@@ -1,4 +1,3 @@
-
 //class Employee extends Person2 {
 //    private String department;
 //    public boolean belongsToADepartment;
