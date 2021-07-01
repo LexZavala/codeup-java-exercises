@@ -101,5 +101,5 @@ public class HighLow {
                 System.out.println("Program closed by user.");
             }
         }
-//
-//}
+
+}
